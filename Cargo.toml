@@ -1,6 +1,6 @@
 [package]
 name = "gaydar"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2024"
 description = "GAYDAR — a very queer SoundCloud radio, native Rust + BUI"
 license = "GPL-3.0-or-later"

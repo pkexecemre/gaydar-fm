@@ -186,8 +186,8 @@ There is no `--help` in this build; unknown arguments are ignored. The CLI is de
 Every tagged release is built by GitHub Actions and attached to the [Releases](https://github.com/pkexecemre/gaydar-fm/releases) page:
 
 ~~~bash
-# download gaydar-fm_0.1.0_amd64.deb from Releases, then:
-sudo apt install ./gaydar-fm_0.1.0_amd64.deb
+# download gaydar-fm_0.1.1_amd64.deb from Releases, then:
+sudo apt install ./gaydar-fm_0.1.1_amd64.deb
 gaydar
 ~~~
 

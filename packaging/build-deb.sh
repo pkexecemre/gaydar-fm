@@ -30,7 +30,8 @@ ARCH=amd64
 PKG=gaydar-fm
 OUT_DIR="$ROOT/dist"
 STAGE=$(mktemp -d /tmp/gaydar-deb.XXXXXX)
-trap 'rm -rf "$STAGE"' EXIT
+TARBALLS=$(mktemp -d /tmp/gaydar-deb-tar.XXXXXX)
+trap 'rm -rf "$STAGE" "$TARBALLS"' EXIT
 
 echo "==> staging $PKG $VERSION ($ARCH)"
 install -d "$STAGE/DEBIAN" \
@@ -79,22 +80,19 @@ chmod 755 "$STAGE/usr/bin/gaydar"
 chmod 755 "$STAGE/DEBIAN"
 chmod 644 "$STAGE/DEBIAN/control" "$STAGE/DEBIAN/md5sums"
 
-(
-  cd "$STAGE"
-  tar --sort=name --mtime='UTC 2026-01-01' --owner=0 --group=0 --numeric-owner \
-      -czf control.tar.gz -C DEBIAN .
-  tar --sort=name --mtime='UTC 2026-01-01' --owner=0 --group=0 --numeric-owner \
-      --exclude='./DEBIAN' --exclude='./control.tar.gz' \
-      --exclude='./data.tar.gz' --exclude='./debian-binary' \
-      -czf data.tar.gz .
-  printf '2.0\n' > debian-binary
-)
+# Build both tarballs outside the staging tree so tar never sees its own
+# output appear inside the directory it is reading.
+tar --sort=name --mtime='UTC 2026-01-01' --owner=0 --group=0 --numeric-owner \
+    -czf "$TARBALLS/control.tar.gz" -C "$STAGE/DEBIAN" .
+tar --sort=name --mtime='UTC 2026-01-01' --owner=0 --group=0 --numeric-owner \
+    --exclude='./DEBIAN' -czf "$TARBALLS/data.tar.gz" -C "$STAGE" .
+printf '2.0\n' > "$TARBALLS/debian-binary"
 
 mkdir -p "$OUT_DIR"
 DEB="$OUT_DIR/$PKG"_"$VERSION"_"$ARCH".deb
 rm -f "$DEB"
 (
-  cd "$STAGE"
+  cd "$TARBALLS"
   ar rcs "$DEB" debian-binary control.tar.gz data.tar.gz
 )
 
