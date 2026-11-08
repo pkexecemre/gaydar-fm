@@ -1,0 +1,1188 @@
+{
+  "seed_queries": [
+    {
+      "q": "drag queen dj set",
+      "label": "Drag queen DJ sets",
+      "weight": 0.95,
+      "dials": {
+        "camp": 0.92,
+        "club": 0.78,
+        "soft": 0.18,
+        "chaos": 0.35
+      }
+    },
+    {
+      "q": "Jinkx Monsoon",
+      "label": "Jinkx Monsoon",
+      "weight": 0.8,
+      "dials": {
+        "camp": 0.96,
+        "club": 0.55,
+        "soft": 0.45,
+        "chaos": 0.3
+      }
+    },
+    {
+      "q": "Sasha Velour",
+      "label": "Sasha Velour",
+      "weight": 0.8,
+      "dials": {
+        "camp": 0.95,
+        "club": 0.6,
+        "soft": 0.35,
+        "chaos": 0.35
+      }
+    },
+    {
+      "q": "Shea Couleé",
+      "label": "Shea Couleé",
+      "weight": 0.75,
+      "dials": {
+        "camp": 0.9,
+        "club": 0.65,
+        "soft": 0.3,
+        "chaos": 0.4
+      }
+    },
+    {
+      "q": "Adore Delano",
+      "label": "Adore Delano",
+      "weight": 0.85,
+      "dials": {
+        "camp": 0.9,
+        "club": 0.55,
+        "soft": 0.25,
+        "chaos": 0.55
+      }
+    },
+    {
+      "q": "Bob the Drag Queen",
+      "label": "Bob the Drag Queen",
+      "weight": 0.85,
+      "dials": {
+        "camp": 0.95,
+        "club": 0.6,
+        "soft": 0.2,
+        "chaos": 0.6
+      }
+    },
+    {
+      "q": "Trixie Mattel",
+      "label": "Trixie Mattel",
+      "weight": 0.9,
+      "dials": {
+        "camp": 0.97,
+        "club": 0.7,
+        "soft": 0.5,
+        "chaos": 0.2
+      }
+    },
+    {
+      "q": "Alaska Thunderfuck",
+      "label": "Alaska Thunderfuck",
+      "weight": 0.75,
+      "dials": {
+        "camp": 0.95,
+        "club": 0.55,
+        "soft": 0.3,
+        "chaos": 0.45
+      }
+    },
+    {
+      "q": "Amanda Lear",
+      "label": "Amanda Lear",
+      "weight": 0.65,
+      "dials": {
+        "camp": 0.95,
+        "club": 0.6,
+        "soft": 0.55,
+        "chaos": 0.15
+      }
+    },
+    {
+      "q": "gay disco",
+      "label": "Gay disco",
+      "weight": 0.85,
+      "dials": {
+        "camp": 0.85,
+        "club": 0.85,
+        "soft": 0.4,
+        "chaos": 0.15
+      }
+    },
+    {
+      "q": "disco diva",
+      "label": "Disco diva",
+      "weight": 0.75,
+      "dials": {
+        "camp": 0.9,
+        "club": 0.8,
+        "soft": 0.35,
+        "chaos": 0.2
+      }
+    },
+    {
+      "q": "Sylvester disco",
+      "label": "Sylvester & the disco afterlife",
+      "weight": 0.8,
+      "dials": {
+        "camp": 0.88,
+        "club": 0.82,
+        "soft": 0.58,
+        "chaos": 0.1
+      }
+    },
+    {
+      "q": "Bronski Beat remix",
+      "label": "Bronski Beat, remixed",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.85,
+        "club": 0.7,
+        "soft": 0.5,
+        "chaos": 0.25
+      }
+    },
+    {
+      "q": "vogue beats",
+      "label": "Vogue beats",
+      "weight": 0.9,
+      "dials": {
+        "camp": 0.8,
+        "club": 0.96,
+        "soft": 0.1,
+        "chaos": 0.45
+      }
+    },
+    {
+      "q": "kiki ball",
+      "label": "Kiki ball",
+      "weight": 0.85,
+      "dials": {
+        "camp": 0.85,
+        "club": 0.85,
+        "soft": 0.15,
+        "chaos": 0.72
+      }
+    },
+    {
+      "q": "ballroom vogue",
+      "label": "Ballroom vogue",
+      "weight": 0.9,
+      "dials": {
+        "camp": 0.88,
+        "club": 0.92,
+        "soft": 0.12,
+        "chaos": 0.5
+      }
+    },
+    {
+      "q": "Kevin Aviance",
+      "label": "Kevin Aviance",
+      "weight": 0.75,
+      "dials": {
+        "camp": 0.9,
+        "club": 0.88,
+        "soft": 0.3,
+        "chaos": 0.4
+      }
+    },
+    {
+      "q": "Vjuan Allure",
+      "label": "Vjuan Allure",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.7,
+        "club": 0.95,
+        "soft": 0.1,
+        "chaos": 0.55
+      }
+    },
+    {
+      "q": "sapphic pop",
+      "label": "Sapphic pop",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.45,
+        "club": 0.35,
+        "soft": 0.88,
+        "chaos": 0.25
+      }
+    },
+    {
+      "q": "queer techno",
+      "label": "Queer techno",
+      "weight": 0.8,
+      "dials": {
+        "camp": 0.45,
+        "club": 0.96,
+        "soft": 0.2,
+        "chaos": 0.55
+      }
+    },
+    {
+      "q": "queer rave",
+      "label": "Queer rave",
+      "weight": 0.75,
+      "dials": {
+        "camp": 0.5,
+        "club": 0.92,
+        "soft": 0.15,
+        "chaos": 0.7
+      }
+    },
+    {
+      "q": "queercore",
+      "label": "Queercore",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.5,
+        "club": 0.35,
+        "soft": 0.3,
+        "chaos": 0.92
+      }
+    },
+    {
+      "q": "Patrick Cowley",
+      "label": "Patrick Cowley",
+      "weight": 0.65,
+      "dials": {
+        "camp": 0.6,
+        "club": 0.9,
+        "soft": 0.5,
+        "chaos": 0.15
+      }
+    },
+    {
+      "q": "Hercules and Love Affair",
+      "label": "Hercules & Love Affair",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.78,
+        "club": 0.8,
+        "soft": 0.62,
+        "chaos": 0.2
+      }
+    },
+    {
+      "q": "Linn da Quebrada",
+      "label": "Linn da Quebrada",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.72,
+        "club": 0.78,
+        "soft": 0.35,
+        "chaos": 0.7
+      }
+    },
+    {
+      "q": "COUCOU CHLOE",
+      "label": "COUCOU CHLOE",
+      "weight": 0.8,
+      "dials": {
+        "camp": 0.55,
+        "club": 0.9,
+        "soft": 0.2,
+        "chaos": 0.8
+      }
+    },
+    {
+      "q": "Mykki Blanco",
+      "label": "Mykki Blanco",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.6,
+        "club": 0.72,
+        "soft": 0.35,
+        "chaos": 0.85
+      }
+    },
+    {
+      "q": "queer punk",
+      "label": "Queer punk",
+      "weight": 0.75,
+      "dials": {
+        "camp": 0.5,
+        "club": 0.35,
+        "soft": 0.3,
+        "chaos": 0.9
+      }
+    },
+    {
+      "q": "pigeon pit",
+      "label": "Pigeon Pit",
+      "weight": 0.65,
+      "dials": {
+        "camp": 0.35,
+        "club": 0.2,
+        "soft": 0.7,
+        "chaos": 0.8
+      }
+    },
+    {
+      "q": "queer breakcore",
+      "label": "Queer breakcore",
+      "weight": 0.6,
+      "dials": {
+        "camp": 0.5,
+        "club": 0.6,
+        "soft": 0.2,
+        "chaos": 0.95
+      }
+    },
+    {
+      "q": "glitchcore",
+      "label": "Glitchcore",
+      "weight": 0.6,
+      "dials": {
+        "camp": 0.55,
+        "club": 0.6,
+        "soft": 0.25,
+        "chaos": 0.95
+      }
+    },
+    {
+      "q": "hyperpop edit",
+      "label": "Hyperpop edits",
+      "weight": 0.65,
+      "dials": {
+        "camp": 0.75,
+        "club": 0.7,
+        "soft": 0.25,
+        "chaos": 0.9
+      }
+    },
+    {
+      "q": "Dorian Electra remix",
+      "label": "Dorian Electra, remixed",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.95,
+        "club": 0.6,
+        "soft": 0.2,
+        "chaos": 0.7
+      }
+    },
+    {
+      "q": "Beverly Glenn-Copeland",
+      "label": "Beverly Glenn-Copeland",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.45,
+        "club": 0.3,
+        "soft": 0.92,
+        "chaos": 0.1
+      }
+    },
+    {
+      "q": "trans ambient",
+      "label": "Trans ambient",
+      "weight": 0.65,
+      "dials": {
+        "camp": 0.3,
+        "club": 0.3,
+        "soft": 0.96,
+        "chaos": 0.25
+      }
+    },
+    {
+      "q": "Ana Roxanne",
+      "label": "Ana Roxanne",
+      "weight": 0.65,
+      "dials": {
+        "camp": 0.25,
+        "club": 0.2,
+        "soft": 0.96,
+        "chaos": 0.1
+      }
+    },
+    {
+      "q": "Perfume Genius",
+      "label": "Perfume Genius",
+      "weight": 0.7,
+      "dials": {
+        "camp": 0.68,
+        "club": 0.3,
+        "soft": 0.88,
+        "chaos": 0.3
+      }
+    },
+    {
+      "q": "Tami T",
+      "label": "Tami T",
+      "weight": 0.6,
+      "dials": {
+        "camp": 0.55,
+        "club": 0.5,
+        "soft": 0.8,
+        "chaos": 0.55
+      }
+    },
+    {
+      "q": "Julien Baker",
+      "label": "Julien Baker",
+      "weight": 0.6,
+      "dials": {
+        "camp": 0.3,
+        "club": 0.25,
+        "soft": 0.9,
+        "chaos": 0.35
+      }
+    },
+    {
+      "q": "Snail Mail",
+      "label": "Snail Mail",
+      "weight": 0.55,
+      "dials": {
+        "camp": 0.35,
+        "club": 0.35,
+        "soft": 0.82,
+        "chaos": 0.3
+      }
+    }
+  ],
+  "artist_seeds": [
+    {
+      "name": "Kevin JZ Prodigy",
+      "tags": [
+        "ballroom",
+        "vogue",
+        "chant",
+        "ha"
+      ],
+      "why": "The voice that turns a category into a verdict. If the beat has a chant, it probably came from him."
+    },
+    {
+      "name": "Byrell the Great",
+      "tags": [
+        "ballroom",
+        "vogue beats",
+        "new jersey"
+      ],
+      "why": "Brick City ballroom royalty, making beats that sound like a runway with a grudge."
+    },
+    {
+      "name": "Vjuan Allure",
+      "tags": [
+        "ballroom",
+        "vogue",
+        "pioneer"
+      ],
+      "why": "A foundation of the form. Put some respect on the mix."
+    },
+    {
+      "name": "MikeQ",
+      "tags": [
+        "ballroom",
+        "vogue",
+        "edits"
+      ],
+      "why": "The edit machine. Every 'ha' lands exactly on time."
+    },
+    {
+      "name": "Kevin Aviance",
+      "tags": [
+        "ballroom",
+        "house",
+        "vocals"
+      ],
+      "why": "Club legend, runway voice, closings that feel like a blessing."
+    },
+    {
+      "name": "Trixie Mattel",
+      "tags": [
+        "drag",
+        "country",
+        "disco",
+        "dj"
+      ],
+      "why": "Plastic pink, acoustic heart, and DJ sets that treat disco like a family heirloom."
+    },
+    {
+      "name": "Jinkx Monsoon",
+      "tags": [
+        "drag",
+        "cabaret",
+        "camp",
+        "vocals"
+      ],
+      "why": "Theatre-kid drag with a belt that could stop traffic."
+    },
+    {
+      "name": "Sasha Velour",
+      "tags": [
+        "drag",
+        "art pop",
+        "camp"
+      ],
+      "why": "Drag as editorial: wigs with thesis statements."
+    },
+    {
+      "name": "Shea Couleé",
+      "tags": [
+        "drag",
+        "r&b",
+        "fashion"
+      ],
+      "why": "Runway precision, R&B softness, zero apologies."
+    },
+    {
+      "name": "Adore Delano",
+      "tags": [
+        "drag",
+        "pop punk",
+        "chaos"
+      ],
+      "why": "Pop-punk heart, eyeliner forever."
+    },
+    {
+      "name": "Bob the Drag Queen",
+      "tags": [
+        "drag",
+        "comedy",
+        "house"
+      ],
+      "why": "Comedy first, beats second, both lethal."
+    },
+    {
+      "name": "Bimini Bon Boulash",
+      "tags": [
+        "drag",
+        "punk",
+        "uk"
+      ],
+      "why": "East London punk drag with a pop chorus hiding in the pocket."
+    },
+    {
+      "name": "Honey Dijon",
+      "tags": [
+        "house",
+        "club",
+        "trans"
+      ],
+      "why": "Chicago house lineage, fashion-week stamina, no filler."
+    },
+    {
+      "name": "COUCOU CHLOE",
+      "tags": [
+        "club",
+        "industrial",
+        "chaos"
+      ],
+      "why": "Club music with the lights flickering and the exit sign buzzing."
+    },
+    {
+      "name": "Mykki Blanco",
+      "tags": [
+        "queer rap",
+        "punk",
+        "poetry"
+      ],
+      "why": "Rap, noise, and a memoir's worth of nerve."
+    },
+    {
+      "name": "Linn da Quebrada",
+      "tags": [
+        "brazilian",
+        "trans",
+        "baile funk"
+      ],
+      "why": "São Paulo's sharpest tongue over baile funk's pulse."
+    },
+    {
+      "name": "Shygirl",
+      "tags": [
+        "club",
+        "uk",
+        "pop"
+      ],
+      "why": "Whispered menace over club pressure. Always slightly ahead of the room."
+    },
+    {
+      "name": "LSDXOXO",
+      "tags": [
+        "club",
+        "techno",
+        "raunch"
+      ],
+      "why": "Raunchy, precise, and permanently one BPM ahead of the room."
+    },
+    {
+      "name": "Big Freedia",
+      "tags": [
+        "bounce",
+        "queer",
+        "new orleans"
+      ],
+      "why": "Bounce royalty. Ass-shaking as civic duty."
+    },
+    {
+      "name": "SOPHIE",
+      "tags": [
+        "hyperpop",
+        "trans",
+        "icon"
+      ],
+      "why": "The blueprint. Pop as industrial material; nothing sounds the same after."
+    },
+    {
+      "name": "Dorian Electra",
+      "tags": [
+        "hyperpop",
+        "gender",
+        "camp"
+      ],
+      "why": "Gender as a genre, hooks as a dare."
+    },
+    {
+      "name": "100 gecs",
+      "tags": [
+        "hyperpop",
+        "chaos",
+        "trans"
+      ],
+      "why": "A sugar rush with a nosebleed. Laura Les is a patron saint."
+    },
+    {
+      "name": "food house",
+      "tags": [
+        "hyperpop",
+        "queer",
+        "chaos"
+      ],
+      "why": "Gupi and Fraxiom making the most delightful mess in the room."
+    },
+    {
+      "name": "Arca",
+      "tags": [
+        "experimental",
+        "trans",
+        "art pop"
+      ],
+      "why": "Mutating beauty. The future has no fixed shape."
+    },
+    {
+      "name": "A. G. Cook",
+      "tags": [
+        "pc music",
+        "producer",
+        "camp"
+      ],
+      "why": "The architect of PC Music's chrome-plated optimism."
+    },
+    {
+      "name": "Hannah Diamond",
+      "tags": [
+        "pc music",
+        "pop",
+        "soft"
+      ],
+      "why": "Hyper-glossy and secretly fragile. A dreamhouse with a heartbeat."
+    },
+    {
+      "name": "Chase Icon",
+      "tags": [
+        "hyperpop",
+        "trans",
+        "camp"
+      ],
+      "why": "Brat pop with a perfect smirk and a job application you can dance to."
+    },
+    {
+      "name": "Beverly Glenn-Copeland",
+      "tags": [
+        "ambient",
+        "trans",
+        "elder"
+      ],
+      "why": "A trans elder whose music sounds like being held."
+    },
+    {
+      "name": "Ana Roxanne",
+      "tags": [
+        "ambient",
+        "trans",
+        "choral"
+      ],
+      "why": "Drone, choir, and the softest possible light."
+    },
+    {
+      "name": "Lyra Pramuk",
+      "tags": [
+        "ambient",
+        "trans",
+        "vocal"
+      ],
+      "why": "A voice made into weather."
+    },
+    {
+      "name": "Tami T",
+      "tags": [
+        "pop",
+        "trans",
+        "tender"
+      ],
+      "why": "Bedroom pop about desire, dysphoria, and getting dressed."
+    },
+    {
+      "name": "ANOHNI",
+      "tags": [
+        "art pop",
+        "trans",
+        "soul"
+      ],
+      "why": "A voice that makes rooms feel holy and furious at once."
+    },
+    {
+      "name": "Perfume Genius",
+      "tags": [
+        "art pop",
+        "queer",
+        "tender"
+      ],
+      "why": "Queer desire with a knife in its back pocket."
+    },
+    {
+      "name": "Eartheater",
+      "tags": [
+        "experimental",
+        "queer",
+        "vocal"
+      ],
+      "why": "Folk, noise, and a voice like glass in honey."
+    },
+    {
+      "name": "girl in red",
+      "tags": [
+        "sapphic",
+        "indie",
+        "bedroom"
+      ],
+      "why": "The gateway crush. Queer indie with a hoodie on."
+    },
+    {
+      "name": "Julien Baker",
+      "tags": [
+        "queer",
+        "indie",
+        "sad"
+      ],
+      "why": "Guitar, God, and the particular ache of a girl who loves girls."
+    },
+    {
+      "name": "Snail Mail",
+      "tags": [
+        "sapphic",
+        "indie",
+        "guitar"
+      ],
+      "why": "Heartbreak with a Fender and a perfect haircut."
+    },
+    {
+      "name": "King Princess",
+      "tags": [
+        "sapphic",
+        "pop",
+        "butch"
+      ],
+      "why": "Butch swagger, pop polish, a smirk you can hear."
+    },
+    {
+      "name": "pigeon pit",
+      "tags": [
+        "folk punk",
+        "queer",
+        "diy"
+      ],
+      "why": "Campfire punk for the girls with too many feelings."
+    },
+    {
+      "name": "Girls Rituals",
+      "tags": [
+        "noise pop",
+        "trans",
+        "diy"
+      ],
+      "why": "A one-person riot with a drum machine."
+    },
+    {
+      "name": "Sylvester",
+      "tags": [
+        "disco",
+        "queer",
+        "legend"
+      ],
+      "why": "Our disco ancestor. 'You Make Me Feel' is a sacrament."
+    },
+    {
+      "name": "Patrick Cowley",
+      "tags": [
+        "hi-nrg",
+        "synth",
+        "disco"
+      ],
+      "why": "The gay sound of the early 80s: sweaty, synthetic, free."
+    },
+    {
+      "name": "Bronski Beat",
+      "tags": [
+        "synthpop",
+        "queer",
+        "80s"
+      ],
+      "why": "Smalltown boy, big feelings, an eternal outro."
+    },
+    {
+      "name": "Frankie Goes to Hollywood",
+      "tags": [
+        "camp",
+        "synthpop",
+        "80s"
+      ],
+      "why": "Relax. Don't do it. A whole decade in one chorus."
+    },
+    {
+      "name": "Pet Shop Boys",
+      "tags": [
+        "synthpop",
+        "camp",
+        "80s"
+      ],
+      "why": "Irony, orchestras, and a permanent deadpan."
+    },
+    {
+      "name": "Pabllo Vittar",
+      "tags": [
+        "brazilian",
+        "drag",
+        "pop"
+      ],
+      "why": "The biggest drag pop star on earth, and she knows it."
+    }
+  ],
+  "queer_lexicon": [
+    "ballroom",
+    "vogue",
+    "vogue femme",
+    "old way",
+    "new way",
+    "runway",
+    "realness",
+    "kiki",
+    "kiki ball",
+    "house",
+    "legendary",
+    "icon",
+    "mother",
+    "the category is",
+    "10s across the board",
+    "reading",
+    "shade",
+    "tea",
+    "gag",
+    "gagged",
+    "serving",
+    "serving looks",
+    "snatched",
+    "clocked",
+    "werk",
+    "fierce",
+    "sickening",
+    "camp",
+    "high camp",
+    "diva",
+    "torch song",
+    "showgirl",
+    "matinee",
+    "disco",
+    "hi-nrg",
+    "circuit",
+    "warehouse",
+    "afterhours",
+    "last track",
+    "lights up",
+    "the floor",
+    "b2b",
+    "boiler room",
+    "hyperpop",
+    "glitchcore",
+    "digicore",
+    "hexd",
+    "breakcore",
+    "donk",
+    "bootleg",
+    "mashup",
+    "edit",
+    "slowed + reverb",
+    "stan",
+    "delulu",
+    "feral",
+    "goblin mode",
+    "unhinged",
+    "cringe",
+    "gremlin",
+    "sapphic",
+    "wlw",
+    "butch",
+    "femme",
+    "stud",
+    "t4t",
+    "trans joy",
+    "gender euphoria",
+    "girlmode",
+    "boymode",
+    "egg",
+    "chosen family",
+    "the girls",
+    "girls and gays",
+    "gaydar",
+    "bi-fi",
+    "lesbi-honest",
+    "pan-demonium",
+    "no notes",
+    "mother is mothering",
+    "it's giving",
+    "the gag is",
+    "soft launch",
+    "touch grass",
+    "hold my earring",
+    "the agenda",
+    "signal",
+    "reading the room",
+    "dead channel",
+    "aux cord",
+    "group chat",
+    "2am",
+    "last train",
+    "cigarette outside",
+    "cry in the bathroom",
+    "dance anyway"
+  ],
+  "tag_families": {
+    "camp": [
+      "camp",
+      "high camp",
+      "diva",
+      "drag",
+      "ballroom",
+      "vogue",
+      "drag queen",
+      "drag king",
+      "disco",
+      "hi-nrg",
+      "torch song",
+      "showtune",
+      "cabaret",
+      "matinee",
+      "melodrama",
+      "glam",
+      "glitter",
+      "sequin",
+      "feather boa",
+      "old hollywood",
+      "technicolor",
+      "encore",
+      "lip sync",
+      "death drop",
+      "reveal",
+      "eleganza",
+      "pageant",
+      "mother",
+      "icon",
+      "legendary",
+      "reading",
+      "shade",
+      "kiki",
+      "realness",
+      "the category is",
+      "sickening",
+      "fierce"
+    ],
+    "club": [
+      "club",
+      "house",
+      "techno",
+      "ballroom",
+      "vogue",
+      "vogue beats",
+      "jersey club",
+      "baile funk",
+      "bounce",
+      "breakbeat",
+      "garage",
+      "trance",
+      "hard groove",
+      "donk",
+      "circuit",
+      "warehouse",
+      "afterhours",
+      "rave",
+      "queer rave",
+      "b2b",
+      "dj set",
+      "mix",
+      "edit",
+      "bootleg",
+      "remix",
+      "vocal house",
+      "piano house",
+      "handbag house",
+      "hi-nrg",
+      "italo",
+      "disco",
+      "boogie",
+      "jackin",
+      "acid",
+      "4am",
+      "last train",
+      "lights up"
+    ],
+    "soft": [
+      "ambient",
+      "drone",
+      "choral",
+      "neoclassical",
+      "slowcore",
+      "dream pop",
+      "shoegaze",
+      "bedroom pop",
+      "folk",
+      "singer-songwriter",
+      "piano",
+      "strings",
+      "hymn",
+      "devotional",
+      "asmr",
+      "lo-fi",
+      "tape hiss",
+      "rain",
+      "night bus",
+      "tender",
+      "intimate",
+      "whisper",
+      "acoustic",
+      "unplugged",
+      "live session",
+      "cover",
+      "ballad",
+      "torch"
+    ],
+    "chaos": [
+      "hyperpop",
+      "glitchcore",
+      "digicore",
+      "hexd",
+      "breakcore",
+      "noise",
+      "industrial",
+      "experimental",
+      "deconstructed club",
+      "mashup",
+      "edit",
+      "bootleg",
+      "sped up",
+      "slowed + reverb",
+      "nightcore",
+      "donk",
+      "memecore",
+      "y2k",
+      "brat",
+      "maximalist",
+      "pc music",
+      "queercore",
+      "riot grrrl",
+      "pop punk",
+      "screamo",
+      "unhinged",
+      "feral",
+      "silly"
+    ]
+  },
+  "copy": {
+    "hero_lines": [
+      "Your gaydar has taste.",
+      "No login. No closet. Just play.",
+      "SoundCloud's gayest after-hours, now with better lighting.",
+      "The girls are online. The radio is not okay.",
+      "A radio for people who have never once been chill.",
+      "Skip the filler. Keep the drama.",
+      "Tuned in, coming out, turning up.",
+      "Every track hand-picked by a very opinionated homosexual."
+    ],
+    "loading": [
+      "Reading the room...",
+      "Tuning the gaydar...",
+      "Consulting the Agenda...",
+      "The DJ is in the bathroom...",
+      "Warming up the decks...",
+      "Looking for the beat that looks back...",
+      "Asking the girls...",
+      "Rummaging through the crates...",
+      "Calibrating camp...",
+      "Buffering, but make it fashion..."
+    ],
+    "empty_states": {
+      "search": "Nothing yet. The girls are typing.",
+      "liked": "No likes yet. Your heart is a closed venue.",
+      "history": "No history. You blacked out. Respect.",
+      "radio": "The DJ is in the bathroom. Give her a minute.",
+      "offline": "No signal. The gaydar needs Wi-Fi.",
+      "no_results": "Not a single track. Even the algorithm is gagged.",
+      "queue": "The queue is empty. Surely you have opinions."
+    },
+    "toasts": [
+      "Liked. The girls are kicking their feet.",
+      "Unliked. It's not you, it's the last track.",
+      "Skipped. The algorithm is taking it personally (it will recover).",
+      "Track unavailable. The label said no.",
+      "Stream error. That one ghosted us; skipping.",
+      "Refreshing the client ID. SoundCloud moved the keys again.",
+      "Signal restored. We're back.",
+      "Link copied. Send it to the group chat.",
+      "Queue full. One banger at a time.",
+      "No network. The gaydar is running on memory."
+    ],
+    "dial_labels": {
+      "camp": {
+        "name": "Camp",
+        "low": "Understated",
+        "high": "Matinee diva",
+        "description": "Old Hollywood, new nails. How much drama do you want with your chorus?"
+      },
+      "club": {
+        "name": "Club",
+        "low": "Living room",
+        "high": "Last train home",
+        "description": "BPM, sweat, and a stranger's good opinion."
+      },
+      "soft": {
+        "name": "Soft",
+        "low": "Armour on",
+        "high": "Held",
+        "description": "For the tender part of the night, and the walk home after."
+      },
+      "chaos": {
+        "name": "Chaos",
+        "low": "Composed",
+        "high": "Unwell (affectionate)",
+        "description": "How many genres should collide before the chorus hits?"
+      }
+    },
+    "badges": [
+      "BALLROOM",
+      "DRAG",
+      "TRANSCENDENT",
+      "SAPPHIC",
+      "CAMP",
+      "HI-NRG",
+      "SOFT LAUNCH",
+      "NO SKIPS",
+      "GAYDAR PICK",
+      "10s",
+      "MOTHER",
+      "UNAVAILABLE",
+      "LOCAL LEGEND",
+      "CRYING IN THE CLUB"
+    ]
+  }
+}
