@@ -134,13 +134,6 @@ Install examples (package names as of 2026; adjust for your release):
 sudo apt install build-essential cmake pkg-config libasound2-dev libx11-dev ffmpeg
 ```
 
-**Fedora**
-
-```bash
-sudo dnf install gcc gcc-c++ cmake pkgconf-pkg-config alsa-lib-devel libX11-devel ffmpeg
-# If ffmpeg comes from RPM Fusion, install it from there; ffmpeg-free should cover MP3.
-```
-
 **Arch**
 
 ```bash
@@ -193,10 +186,10 @@ gaydar
 
 The package installs the release binary, the full asset set, a freedesktop entry, and hicolor icons; `ffmpeg` and the ALSA/X11 runtime libraries are declared as dependencies. Remove it with `sudo apt remove gaydar-fm`. Build it locally with `packaging/build-deb.sh` (standard `ar`/`tar`, no Debian host required).
 
-### Fedora / RHEL-family (.rpm)
+### OpenSUSE Tumbleweed (.rpm)
 
 ~~~bash
-sudo dnf install ./gaydar-fm-0.1.2-1.x86_64.rpm
+sudo zypper install ./gaydar-fm-0.1.2-1.x86_64.rpm
 gaydar
 ~~~
 
