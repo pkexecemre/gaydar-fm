@@ -183,15 +183,33 @@ There is no `--help` in this build; unknown arguments are ignored. The CLI is de
 
 ### Debian / Ubuntu (.deb)
 
-Every tagged release is built by GitHub Actions and attached to the [Releases](https://github.com/pkexecemre/gaydar-fm/releases) page:
+Every tagged release is built by GitHub Actions and attached to the [Releases](https://github.com/pkexecemre/gaydar-fm/releases) page as **.deb**, **.rpm**, and **.AppImage**.
 
 ~~~bash
-# download gaydar-fm_0.1.1_amd64.deb from Releases, then:
-sudo apt install ./gaydar-fm_0.1.1_amd64.deb
+# Debian / Ubuntu
+sudo apt install ./gaydar-fm_0.1.2_amd64.deb
 gaydar
 ~~~
 
-The package installs the release binary, the full asset set, a freedesktop entry, and hicolor icons; `ffmpeg` and the ALSA/X11 runtime libraries are declared as dependencies. Remove it with `sudo apt remove gaydar-fm`. Build the same package locally with `packaging/build-deb.sh` (it uses `ar`, `tar`, and the release binary, so it works outside Debian too).
+The package installs the release binary, the full asset set, a freedesktop entry, and hicolor icons; `ffmpeg` and the ALSA/X11 runtime libraries are declared as dependencies. Remove it with `sudo apt remove gaydar-fm`. Build it locally with `packaging/build-deb.sh` (standard `ar`/`tar`, no Debian host required).
+
+### Fedora / RHEL-family (.rpm)
+
+~~~bash
+sudo dnf install ./gaydar-fm-0.1.2-1.x86_64.rpm
+gaydar
+~~~
+
+The RPM is built by the same CI job with [nfpm](https://nfpm.goreleaser.com/) (no `rpmbuild` needed) and bundles the binary, assets, desktop entry, and icons. It requires a `/usr/bin/ffmpeg` provider, ALSA, X11, and FreeType. Build it locally with `packaging/build-rpm.sh` after putting `nfpm` on `PATH` (the CI pins nfpm 2.48.0). Remove with `sudo dnf remove gaydar-fm`.
+
+### Any modern Linux (.AppImage)
+
+~~~bash
+chmod +x GAYDAR-FM-0.1.2-x86_64.AppImage
+./GAYDAR-FM-0.1.2-x86_64.AppImage
+~~~
+
+The AppImage bundles the app, assets, desktop entry, and icons; it needs a system `ffmpeg` and the usual X11/ALSA runtime libraries. Build it locally with `packaging/build-appimage.sh` (appimagetool + the type-2 runtime; the CI downloads both). If your distro lacks FUSE, run it with `--appimage-extract-and-run`.
 
 ### From source / prefix install
 

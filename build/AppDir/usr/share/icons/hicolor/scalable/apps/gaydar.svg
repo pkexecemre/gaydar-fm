@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none">
+<defs>
+  <linearGradient id="gdBg" x1="2" y1="0" x2="58" y2="66" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FF3D9A"/><stop offset=".5" stop-color="#B01BE8"/><stop offset="1" stop-color="#22052F"/>
+  </linearGradient>
+  <radialGradient id="gdGlow" cx="32" cy="34" r="30" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FFB3F0" stop-opacity=".55"/><stop offset="1" stop-color="#FFB3F0" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="gdSweep" x1="32" y1="34" x2="64" y2="34" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#C6FF3D" stop-opacity=".62"/><stop offset="1" stop-color="#C6FF3D" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gdHeart" x1="26" y1="24" x2="38" y2="46" gradientUnits="userSpaceOnUse">
+    <stop stop-color="#FFFFFF"/><stop offset=".5" stop-color="#FFF3E4"/><stop offset="1" stop-color="#FFB0DC"/>
+  </linearGradient>
+  <clipPath id="gdClip"><rect width="64" height="64" rx="15"/></clipPath>
+</defs>
+<rect width="64" height="64" rx="15" fill="url(#gdBg)"/>
+<g clip-path="url(#gdClip)">
+  <circle cx="31.5" cy="34" r="30" fill="url(#gdGlow)"/>
+  <circle cx="31.5" cy="34" r="27.5" stroke="#C6FF3D" stroke-opacity=".28" stroke-width="1.5"/>
+  <circle cx="31.5" cy="34" r="20" stroke="#C6FF3D" stroke-opacity=".45" stroke-width="1.5"/>
+  <circle cx="31.5" cy="34" r="12.5" stroke="#C6FF3D" stroke-opacity=".62" stroke-width="1.5"/>
+  <path d="M31.5 34 64 17 64 51Z" fill="url(#gdSweep)"/>
+  <path d="M31.5 34 62 29" stroke="#C6FF3D" stroke-opacity=".75" stroke-width="1.6" stroke-linecap="round"/>
+  <circle cx="47" cy="21.5" r="2" fill="#C6FF3D"/>
+  <circle cx="17.5" cy="43" r="1.5" fill="#C6FF3D" fill-opacity=".9"/>
+  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" transform="translate(32.6 35.4) scale(1.06) translate(-12 -12)" fill="#4A0640" opacity=".38"/>
+  <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" transform="translate(31.5 34.2) scale(1.06) translate(-12 -12)" fill="url(#gdHeart)"/>
+</g>
+<rect x=".75" y=".75" width="62.5" height="62.5" rx="14.4" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="1.5"/>
+</svg>

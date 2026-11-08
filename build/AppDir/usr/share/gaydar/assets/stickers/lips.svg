@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="160" viewBox="0 0 240 160" fill="none"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1">
+<stop stop-color="#FF5B9E"/><stop offset=".35" stop-color="#FF1F8F"/><stop offset="1" stop-color="#A8005A"/></linearGradient>
+<clipPath id="lipclip"><path d="M20 78 C34 42 78 26 120 44 C162 26 206 42 220 78 C206 120 166 142 120 142 C74 142 34 120 20 78 Z"/></clipPath></defs>
+<path d="M20 78 C34 42 78 26 120 44 C162 26 206 42 220 78 C206 120 166 142 120 142 C74 142 34 120 20 78 Z" fill="url(#lg)"/>
+<g clip-path="url(#lipclip)">
+  <path d="M20 78 C34 42 78 26 120 44 C162 26 206 42 220 78" stroke="#7A0038" stroke-width="3" stroke-opacity=".35" fill="none"/>
+  <path d="M26 79 C62 92 178 92 214 79" stroke="#5C002E" stroke-width="3.4" stroke-opacity=".55" fill="none" stroke-linecap="round"/>
+  <ellipse cx="72" cy="60" rx="19" ry="7" fill="#FFFFFF" opacity=".65" transform="rotate(-18 72 60)"/>
+  <ellipse cx="150" cy="56" rx="11" ry="5" fill="#FFFFFF" opacity=".5" transform="rotate(-14 150 56)"/>
+  <ellipse cx="96" cy="106" rx="26" ry="7" fill="#FFA8D4" opacity=".4" transform="rotate(-8 96 106)"/>
+  <ellipse cx="168" cy="102" rx="14" ry="5" fill="#FFA8D4" opacity=".35" transform="rotate(-6 168 102)"/>
+</g>
+<path d="M20 78 C34 42 78 26 120 44 C162 26 206 42 220 78 C206 120 166 142 120 142 C74 142 34 120 20 78 Z" stroke="#7A0038" stroke-width="2.6" stroke-opacity=".45"/></svg>

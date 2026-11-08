@@ -1,0 +1,43 @@
+name: gaydar-fm
+arch: amd64
+platform: linux
+version: 0.1.2
+version_schema: semver
+section: sound
+priority: optional
+maintainer: GAYDAR FM <gaydar-fm@users.noreply.github.com>
+description: |
+  A very queer SoundCloud radio player.
+  GAYDAR FM is a native Rust + BUI SoundCloud radio. It discovers a public
+  SoundCloud web client id without an account, keeps only uploads that expose
+  an unencrypted MP3 stream, decodes through ffmpeg, and writes PCM directly
+  to ALSA. The local Gaydar algorithm learns from plays, skips and likes.
+  .
+  Features a four-dial mood tuner, segmented waveform seeking, queue drawer,
+  ALSA device picker, and a very loud queer visual identity. No login. No
+  closet. No Electron.
+vendor: GAYDAR FM
+homepage: https://github.com/pkexecemre/gaydar-fm
+license: GPL-3.0-or-later
+contents:
+  - src: target/release/gaydar
+    dst: /usr/bin/gaydar
+    file_info:
+      mode: 0755
+  - src: assets
+    dst: /usr/share/gaydar/assets
+  - src: packaging/gaydar.desktop
+    dst: /usr/share/applications/gaydar.desktop
+  - src: packaging/gaydar.svg
+    dst: /usr/share/icons/hicolor/scalable/apps/gaydar.svg
+  - src: packaging/gaydar-256.png
+    dst: /usr/share/icons/hicolor/256x256/apps/gaydar.png
+  - src: LICENSE
+    dst: /usr/share/doc/gaydar-fm/copyright
+overrides:
+  rpm:
+    depends:
+      - /usr/bin/ffmpeg
+      - alsa-lib
+      - libX11
+      - freetype

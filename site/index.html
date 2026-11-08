@@ -1,0 +1,238 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GAYDAR FM, a very queer SoundCloud radio for Linux</title>
+<meta name="description" content="A native Linux radio for public SoundCloud uploads. Rust, ffmpeg and ALSA, four taste dials, no account and no browser.">
+<link rel="icon" href="assets/brand/app-mark.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<a class="skip" href="#main">Skip to the page</a>
+
+<header class="nav">
+  <div class="container nav__in">
+    <nav class="nav__links nav__links--start" aria-label="Page">
+      <a href="#screens">Screens</a>
+      <a href="#dials">Dials</a>
+    </nav>
+    <a class="brand" href="#top" aria-label="GAYDAR FM, back to the top">
+      <img src="assets/brand/wordmark.svg" alt="GAYDAR FM" width="1280" height="320">
+    </a>
+    <nav class="nav__links nav__links--end" aria-label="Install and source">
+      <a href="#install">Install</a>
+      <a href="https://github.com/pkexecemre/gaydar-fm" rel="noopener">Source</a>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero" id="top">
+    <div class="container hero__in">
+      <div class="hero__head">
+        <h1>No login.<br>No closet.</h1>
+      </div>
+      <div class="hero__aside">
+        <p class="lead">A very queer SoundCloud radio for Linux. Rust, ALSA, and opinions.</p>
+        <div class="actions">
+          <a class="btn btn--primary" href="https://github.com/pkexecemre/gaydar-fm/releases/download/v0.1.1/gaydar-fm_0.1.1_amd64.deb">Download the .deb</a>
+          <a class="btn btn--quiet" href="https://github.com/pkexecemre/gaydar-fm/releases">All releases</a>
+        </div>
+        <p class="small">Version 0.1.1 for Debian and Ubuntu amd64, 9.4 MB.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section screens" id="screens">
+    <div class="container">
+      <div class="head">
+        <h2>Eight screens, one window.</h2>
+        <p class="lead">Captured from the release build, not a mockup.</p>
+      </div>
+
+      <figure class="shot shot--wide">
+        <img src="assets/screens/01-home.webp" alt="GAYDAR FM home screen: a pink and plum hero card reading Good evening, gorgeous, four station cards below it, and a list of recommended tracks." width="1440" height="900" data-kind="product">
+        <figcaption>For You. The Agenda, four stations, and a reason under every pick.</figcaption>
+      </figure>
+
+      <div class="shot-row">
+        <figure class="shot">
+          <img src="assets/screens/02-gaydar.webp" alt="The Gaydar screen: a radar sweeping for queer signals, the four mood dials at 82, 74, 46 and 38, and the current reading." width="1440" height="900" loading="lazy" data-kind="product">
+          <figcaption>The Gaydar. The radar, the dials, the current reading.</figcaption>
+        </figure>
+        <figure class="shot">
+          <img src="assets/screens/11-queue.webp" alt="The queue drawer open over the home screen, listing the next tracks with artists and durations." width="1440" height="900" loading="lazy" data-kind="product">
+          <figcaption>The queue. Up next, already curated.</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dials" id="dials">
+    <div class="container dials__in">
+      <div class="head dials__head">
+        <h2>Four dials, no questionnaire.</h2>
+        <p class="lead">It scores from what you play, skip and like. These four bend the score.</p>
+      </div>
+
+      <div class="panel grained">
+        <div class="panel__top">
+          <p class="panel__label">Station presets</p>
+          <div class="presets" role="group" aria-label="Station presets">
+            <button type="button" class="chip" data-preset="1.00,0.55,0.30,0.45" aria-pressed="false">Camp Classics</button>
+            <button type="button" class="chip" data-preset="0.82,1.00,0.18,0.62" aria-pressed="false">Ballroom 4AM</button>
+            <button type="button" class="chip" data-preset="0.35,0.28,1.00,0.20" aria-pressed="false">Soft Serve</button>
+            <button type="button" class="chip" data-preset="0.68,0.86,0.25,1.00" aria-pressed="false">Hyperpop Communion</button>
+          </div>
+        </div>
+
+        <div class="dial-list">
+          <div class="dial">
+            <label class="dial__name" for="camp">Camp</label>
+            <output class="dial__value num" for="camp">0.82</output>
+            <input id="camp" name="camp" type="range" min="0" max="1" step="0.01" value="0.82">
+            <p class="dial__note">more drama, more feathers</p>
+          </div>
+          <div class="dial">
+            <label class="dial__name" for="club">Club</label>
+            <output class="dial__value num" for="club">0.74</output>
+            <input id="club" name="club" type="range" min="0" max="1" step="0.01" value="0.74">
+            <p class="dial__note">louder, sweat, floorfill</p>
+          </div>
+          <div class="dial">
+            <label class="dial__name" for="soft">Soft</label>
+            <output class="dial__value num" for="soft">0.46</output>
+            <input id="soft" name="soft" type="range" min="0" max="1" step="0.01" value="0.46">
+            <p class="dial__note">tender, sapphic, slightly damp</p>
+          </div>
+          <div class="dial">
+            <label class="dial__name" for="chaos">Chaos</label>
+            <output class="dial__value num" for="chaos">0.38</output>
+            <input id="chaos" name="chaos" type="range" min="0" max="1" step="0.01" value="0.38">
+            <p class="dial__note">unhinged in a good way</p>
+          </div>
+        </div>
+
+        <div class="reading">
+          <p class="reading__label">The reading</p>
+          <p class="reading__line" id="reading" aria-live="polite">The girls are getting cabaret with a side of ballroom.</p>
+        </div>
+
+        <p class="panel__foot">The app ships at 0.82, 0.74, 0.46 and 0.38. A reading, not a verdict.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section filter" id="filter">
+    <div class="container">
+      <div class="head">
+        <h2>MP3 or it doesn’t play.</h2>
+        <p class="lead">Only uploads with an unencrypted MP3 stream reach the queue. Everything else is dropped first.</p>
+      </div>
+
+      <table class="table">
+        <caption class="visually-hidden">Which SoundCloud uploads this client can play</caption>
+        <thead>
+          <tr><th scope="col">The upload</th><th scope="col">Plays here</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">MP3, progressive</th><td>Yes</td></tr>
+          <tr><th scope="row">MP3 over HLS, unencrypted</th><td>Yes</td></tr>
+          <tr><th scope="row">AAC or ABR, FairPlay and Widevine</th><td>No</td></tr>
+          <tr><th scope="row">Blocked, snipped, or a preview</th><td>No</td></tr>
+          <tr><th scope="row">Under 45 seconds, over 45 minutes</th><td>No</td></tr>
+        </tbody>
+      </table>
+
+      <p class="note">Major-label searches often come back empty. That is the filter doing its job, and this is not a SoundCloud replacement.</p>
+    </div>
+  </section>
+
+  <section class="section path" id="path">
+    <div class="container">
+      <div class="head">
+        <h2>No browser in the signal path.</h2>
+        <p class="lead">One Rust binary, three threads, and nothing between ffmpeg and the sound card.</p>
+      </div>
+
+      <ol class="chain" aria-label="The playback path">
+        <li>
+          <p class="chain__name">SoundCloud</p>
+          <p class="chain__note">public API</p>
+        </li>
+        <li>
+          <p class="chain__name">The Gaydar</p>
+          <p class="chain__note">picks the queue</p>
+        </li>
+        <li>
+          <p class="chain__name">ffmpeg</p>
+          <p class="chain__note">decodes to PCM</p>
+        </li>
+        <li>
+          <p class="chain__name">ALSA</p>
+          <p class="chain__note">the device, at 48 kHz</p>
+        </li>
+      </ol>
+
+      <div class="path__foot">
+        <p>Your plays, skips and likes feed the scorer. The state is plain JSON in <code>~/.local/share/gaydar</code>.</p>
+        <p>BUI draws the window in C, with no browser engine behind it.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section install grained" id="install">
+    <div class="container">
+      <div class="head">
+        <h2>One command, then press space.</h2>
+      </div>
+
+      <div class="code">
+        <code id="cmd">sudo apt install ./gaydar-fm_0.1.1_amd64.deb</code>
+        <button type="button" class="copy" id="copy" aria-describedby="cmd">Copy</button>
+      </div>
+
+      <div class="install__row">
+        <p class="install__facts">Debian and Ubuntu, amd64, 9.4 MB. ffmpeg and the ALSA and X11 libraries are declared dependencies. The first launch needs an internet connection to find a public client ID.</p>
+        <div class="actions">
+          <a class="btn btn--quiet" href="https://github.com/pkexecemre/gaydar-fm/releases/download/v0.1.1/gaydar-fm_0.1.1_amd64.deb">Download the .deb</a>
+          <a class="link" href="https://github.com/pkexecemre/gaydar-fm">Source on GitHub</a>
+        </div>
+      </div>
+
+      <ul class="keys" aria-label="Keyboard shortcuts">
+        <li><kbd>Space</kbd><span>play or pause</span></li>
+        <li><kbd>←</kbd><span>previous</span></li>
+        <li><kbd>→</kbd><span>next</span></li>
+        <li><kbd>/</kbd><span>search</span></li>
+        <li><kbd>Q</kbd><span>queue</span></li>
+        <li><kbd>L</kbd><span>like</span></li>
+        <li><kbd>Esc</kbd><span>go back</span></li>
+      </ul>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__in">
+    <a class="footer__brand" href="#top" aria-label="GAYDAR FM, back to the top">
+      <img src="assets/brand/wordmark.svg" alt="GAYDAR FM" width="1280" height="320">
+    </a>
+    <p class="footer__line">An unofficial SoundCloud client. No account, no telemetry, no taste profile on a server. GPL-3.0-or-later, built by pkexecemre.</p>
+    <nav class="footer__links" aria-label="Project links">
+      <a href="https://github.com/pkexecemre/gaydar-fm">GitHub</a>
+      <a href="https://github.com/pkexecemre/gaydar-fm/releases">Releases</a>
+      <a href="https://github.com/pkexecemre/gaydar-fm#readme">Readme</a>
+      <a href="https://github.com/pkexecemre/gaydar-fm/blob/master/LICENSE">License</a>
+    </nav>
+    <p class="footer__credits">Screens captured from the release build. Young Serif and Instrument Sans, SIL Open Font License. Covers and brand marks by the project.</p>
+  </div>
+</footer>
+
+<script src="app.js" defer></script>
+</body>
+</html>

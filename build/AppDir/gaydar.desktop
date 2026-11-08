@@ -1,0 +1,13 @@
+[Desktop Entry]
+Type=Application
+Version=1.5
+Name=GAYDAR FM
+GenericName=Music Player
+Comment=A queer SoundCloud radio player - no login, no closet
+Exec=gaydar
+Icon=gaydar
+Terminal=false
+Categories=AudioVideo;Audio;Player;
+Keywords=SoundCloud;radio;music;queer;player;
+StartupNotify=false
+X-AppImage-Version=0.1.2

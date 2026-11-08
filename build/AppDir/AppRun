@@ -1,0 +1,5 @@
+#!/bin/sh
+HERE=$(dirname "$(readlink -f "$0")")
+export PATH="$HERE/usr/bin:$PATH"
+export GAYDAR_ASSETS_DIR="$HERE/usr/share/gaydar/assets"
+exec "$HERE/usr/bin/gaydar" "$@"

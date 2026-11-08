@@ -1,4 +1,4 @@
-name: Build Debian package
+name: Build Linux packages
 
 on:
   push:
@@ -10,8 +10,8 @@ permissions:
   contents: write
 
 jobs:
-  deb:
-    name: Build .deb (amd64)
+  packages:
+    name: Build .deb + .rpm + .AppImage (amd64)
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
@@ -21,7 +21,7 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            build-essential cmake pkg-config \
+            build-essential cmake pkg-config rpm curl ca-certificates \
             libasound2-dev libx11-dev libxext-dev libxrandr-dev \
             libxinerama-dev libxcursor-dev libxi-dev libxkbcommon-dev \
             libxkbcommon-x11-dev libgl1-mesa-dev libfreetype6-dev \
@@ -33,6 +33,23 @@ jobs:
       - name: Cache Cargo and target
         uses: Swatinem/rust-cache@v2
 
+      - name: Install packaging tools (nfpm + appimagetool + runtime)
+        run: |
+          mkdir -p /tmp/gaydar-tools
+          curl -L --retry 3 -o /tmp/gaydar-tools/nfpm.tgz \
+            https://github.com/goreleaser/nfpm/releases/download/v2.48.0/nfpm_2.48.0_Linux_x86_64.tar.gz
+          tar -xzf /tmp/gaydar-tools/nfpm.tgz -C /tmp/gaydar-tools
+          chmod +x /tmp/gaydar-tools/nfpm
+          curl -L --retry 3 -o /tmp/gaydar-tools/appimagetool \
+            https://github.com/AppImage/appimagetool/releases/download/continuous/appimagetool-x86_64.AppImage
+          chmod +x /tmp/gaydar-tools/appimagetool
+          curl -L --retry 3 -o /tmp/gaydar-tools/runtime-x86_64 \
+            https://github.com/AppImage/type2-runtime/releases/download/continuous/runtime-x86_64
+          chmod +x /tmp/gaydar-tools/runtime-x86_64
+          /tmp/gaydar-tools/nfpm --version
+          /tmp/gaydar-tools/appimagetool --appimage-extract-and-run --version
+          echo "/tmp/gaydar-tools" >> "$GITHUB_PATH"
+
       - name: Unit tests
         run: cargo test --lib
 
@@ -42,28 +59,43 @@ jobs:
       - name: Build .deb
         run: packaging/build-deb.sh --skip-build
 
-      - name: Validate Debian package
+      - name: Build .rpm
+        run: packaging/build-rpm.sh
+
+      - name: Build .AppImage
+        run: packaging/build-appimage.sh
+
+      - name: Validate packages
         run: |
           DEB="$(ls dist/gaydar-fm_*_amd64.deb | head -n1)"
-          dpkg-deb --info "$DEB"
-          dpkg-deb --contents "$DEB" | grep -E 'usr/bin/gaydar|usr/share/applications/gaydar.desktop|usr/share/gaydar/assets/fonts'
-          sha256sum "$DEB"
+          RPM="$(ls dist/gaydar-fm-*.x86_64.rpm | head -n1)"
+          APP="$(ls dist/GAYDAR-FM-*-x86_64.AppImage | head -n1)"
+          dpkg-deb --info "$DEB" >/dev/null
+          rpm -qip "$RPM"
+          rpm -qlp "$RPM" | grep -E 'usr/bin/gaydar|usr/share/applications/gaydar.desktop|usr/share/gaydar/assets/fonts'
+          "$APP" --appimage-extract-and-run --screenshot /tmp/appimage-smoke.png --screen home
+          test -s /tmp/appimage-smoke.png
+          sha256sum dist/*.deb dist/*.rpm dist/*.AppImage
 
-      - name: Upload .deb artifact
+      - name: Upload packages
         uses: actions/upload-artifact@v4
         with:
-          name: gaydar-fm-deb
+          name: gaydar-fm-linux-packages
           path: |
             dist/*.deb
+            dist/*.rpm
+            dist/*.AppImage
             dist/*.sha256
           if-no-files-found: error
 
-      - name: Attach .deb to GitHub Release
+      - name: Attach packages to GitHub Release
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
           files: |
             dist/*.deb
+            dist/*.rpm
+            dist/*.AppImage
             dist/*.sha256
           generate_release_notes: true
           fail_on_unmatched_files: true
